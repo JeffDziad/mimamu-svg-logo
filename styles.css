@@ -1,0 +1,37 @@
+.mi-layer {
+    animation: wiggle 2s ease infinite;
+}
+
+/*.ma-layer {*/
+/*    animation: wiggle 2s ease infinite;*/
+/*    animation-delay: 0.25s;*/
+/*}*/
+
+.mu-layer {
+    animation: shifty 4s ease;
+    animation-delay: 0.5s;
+}
+
+@keyframes shifty {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
