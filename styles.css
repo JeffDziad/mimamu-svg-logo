@@ -1,37 +1,61 @@
-.mi-layer {
-    animation: wiggle 2s ease infinite;
+.m1 {
+    animation: a-m1 2s ease-in-out infinite;
 }
 
-/*.ma-layer {*/
-/*    animation: wiggle 2s ease infinite;*/
-/*    animation-delay: 0.25s;*/
-/*}*/
+.m2 {
+    animation: a-m2 2s ease-in-out infinite;
+    animation-delay: 0.25s;
+}
 
-.mu-layer {
-    animation: shifty 4s ease;
+.m3 {
+    animation: a-m3 2s ease-in-out infinite;
     animation-delay: 0.5s;
 }
 
-@keyframes shifty {
+/*@keyframes shifty {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateX(-2px);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*}*/
+
+@keyframes a-m1 {
     0% {
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
     50% {
-        transform: translateX(-2px);
+        transform: translate(0, 10%);
     }
     100% {
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
 }
 
-@keyframes wiggle {
+@keyframes a-m2 {
     0% {
-        transform: translateY(0);
+        transform: translate(2%, 0);
     }
     50% {
-        transform: translateY(-2px);
+        transform: translate(2%, 10%);
     }
     100% {
-        transform: translateY(0);
+        transform: translate(2%, 0);
+    }
+}
+
+@keyframes a-m3 {
+    0% {
+        transform: translate(4%, 0);
+    }
+    50% {
+        transform: translate(4%, 10%);
+    }
+    100% {
+        transform: translate(4%, 0);
     }
 }
